@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -33,20 +34,6 @@
                     android:background="@drawable/panah"></TextView>
 
 
-                <TextView
-                    android:layout_width="300dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="20dp"
-                    android:fontFamily="serif"
-                    android:gravity="center"
-                    android:text="Registrasi Akun"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:textStyle="bold">
-
-                </TextView>
-
             </LinearLayout>
 
             <LinearLayout
@@ -64,7 +51,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/header2"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="15dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginBottom="15dp"
                 android:orientation="vertical">
@@ -85,8 +71,10 @@
                         <ImageView
                             android:id="@+id/gambar"
                             android:layout_width="160dp"
-                            android:layout_height="80dp"
-                            android:background="@drawable/kostaja_logo"></ImageView>
+                            android:layout_height="60dp"
+                            android:background="@drawable/kostaja_text">
+
+                        </ImageView>
 
                     </LinearLayout>
 
@@ -95,12 +83,10 @@
                         android:id="@+id/type_head"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textStyle="bold"
                         android:layout_marginLeft="5dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginTop="20dp"
                         android:textColor="@color/black"
-                        android:text="Daftar Sebagai"
-                        android:fontFamily="serif">
+                        android:text="Daftar Sebagai">
 
                     </TextView>
 
@@ -109,20 +95,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginTop="4dp"
+                        android:background="@drawable/background_ed"
                         android:entries="@array/ListUser"
                         android:paddingLeft="5dp"
-                        android:background="@drawable/background_ed">
-                    </Spinner>
+                        tools:ignore="TouchTargetSizeCheck"></Spinner>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="10dp"
-                        android:fontFamily="serif"
                         android:text="Nama Lengkap"
-                        android:textColor="@color/black"
-                        android:textStyle="bold">
+                        android:textColor="@color/black">
 
                     </TextView>
 
@@ -133,11 +117,12 @@
                         android:layout_marginTop="4dp"
                         android:background="@drawable/background_ed"
                         android:hint="Nama Lengkap"
+                        android:inputType="textPersonName"
                         android:paddingLeft="15dp"
                         android:textColorHint="@color/black"
                         android:textSize="12dp"
                         app:counterTextColor="@color/black"
-                        android:inputType="textPersonName">
+                        tools:ignore="TextSizeCheck,TouchTargetSizeCheck">
 
                     </EditText>
 
@@ -147,8 +132,6 @@
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="10dp"
                         android:text="Nomor Handphone"
-                        android:fontFamily="serif"
-                        android:textStyle="bold"
                         android:textColor="@color/black">
 
                     </TextView>
@@ -160,11 +143,12 @@
                         android:layout_marginTop="4dp"
                         android:background="@drawable/background_ed"
                         android:hint="Nomor Handphone"
+                        android:inputType="phone"
                         android:paddingLeft="15dp"
                         android:textColorHint="@color/black"
                         android:textSize="12dp"
                         app:counterTextColor="@color/black"
-                        android:inputType="phone">
+                        tools:ignore="TextSizeCheck,TouchTargetSizeCheck">
 
                     </EditText>
 
@@ -176,8 +160,6 @@
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="10dp"
                         android:text="Email"
-                        android:fontFamily="serif"
-                        android:textStyle="bold"
                         android:textColor="@color/black">
 
                     </TextView>
@@ -189,11 +171,12 @@
                         android:layout_marginTop="4dp"
                         android:background="@drawable/background_ed"
                         android:hint="Email"
+                        android:inputType="textEmailAddress"
                         android:paddingLeft="15dp"
                         android:textColorHint="@color/black"
                         android:textSize="12dp"
                         app:counterTextColor="@color/black"
-                        android:inputType="textEmailAddress">
+                        tools:ignore="TextSizeCheck,TouchTargetSizeCheck">
 
                     </EditText>
 
@@ -203,8 +186,6 @@
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="10dp"
                         android:text="Password"
-                        android:fontFamily="serif"
-                        android:textStyle="bold"
                         android:textColor="@color/black">
 
                     </TextView>
@@ -230,7 +211,8 @@
                             android:padding="0dp"
                             android:textColorHint="@color/black"
                             android:textSize="12dp"
-                            app:counterTextColor="@color/black"></EditText>
+                            app:counterTextColor="@color/black"
+                            tools:ignore="TextSizeCheck,TouchTargetSizeCheck"></EditText>
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -240,8 +222,6 @@
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="10dp"
                         android:text="Ulangi Password"
-                        android:fontFamily="serif"
-                        android:textStyle="bold"
                         android:textColor="@color/black">
 
                     </TextView>
@@ -268,7 +248,8 @@
                             android:paddingLeft="10dp"
                             android:textColorHint="@color/black"
                             android:textSize="12dp"
-                            app:counterTextColor="@color/black"></EditText>
+                            app:counterTextColor="@color/black"
+                            tools:ignore="TextSizeCheck,TouchTargetSizeCheck"></EditText>
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -280,8 +261,9 @@
                         android:background="@drawable/button_shape"
                         android:hint="Daftar"
                         android:textColor="@color/black"
-                        android:textColorHint="@color/black"
-                        android:textSize="20dp">
+                        android:textColorHint="@color/white"
+                        android:textSize="20dp"
+                        tools:ignore="TouchTargetSizeCheck">
 
                     </androidx.appcompat.widget.AppCompatButton>
 
@@ -298,7 +280,8 @@
                             android:text="Sudah punya akun Kos Taja?"
                             android:textColor="@color/black"
                             android:textSize="10dp"
-                            android:textStyle="normal">
+                            android:textStyle="normal"
+                            tools:ignore="TextSizeCheck">
 
                         </TextView>
 
@@ -310,7 +293,8 @@
                             android:text="Masuk di sini"
                             android:textColor="@color/biru"
                             android:textSize="10dp"
-                            android:textStyle="normal">
+                            android:textStyle="normal"
+                            tools:ignore="TextSizeCheck">
 
                         </TextView>
 
@@ -334,8 +318,6 @@
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_gravity="center"
-            android:layout_marginStart="2pt"
-            android:layout_marginEnd="20dp"
             android:backgroundTint="@color/white">
         </ProgressBar>
     </LinearLayout>
