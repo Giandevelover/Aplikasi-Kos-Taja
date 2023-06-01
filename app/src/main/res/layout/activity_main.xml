@@ -23,21 +23,17 @@
                 android:gravity="start"
                 android:orientation="horizontal">
 
-                <TextView
+                <ImageView
                     android:id="@+id/judul"
                     android:layout_width="100dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="20dp"
-                    android:fontFamily="serif"
                     android:gravity="center"
-                    android:text="Kos Taja"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:textStyle="bold">
+                    android:src="@drawable/kostaja_text">
 
-                </TextView>
+                </ImageView>
 
                 <TextView
                     android:id="@+id/notif_main"
@@ -139,7 +135,8 @@
                             android:text="Selengkapnya tentang Kost ini"
                             android:textAlignment="center"
                             android:textSize="10dp"
-                            android:textStyle="normal">
+                            android:textStyle="normal"
+                            tools:ignore="TextSizeCheck">
 
                         </TextView>
 
@@ -177,11 +174,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="serif"
                             android:text="Selengkapnya tentang Kost ini"
-                            android:textSize="10dp"
                             android:textAlignment="center"
+                            android:textSize="10dp"
                             android:textStyle="normal"
-                            android:fontFamily="serif">
+                            tools:ignore="TextSizeCheck">
 
                         </TextView>
 
@@ -218,94 +216,12 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="serif"
                             android:text="Selengkapnya tentang Kost ini"
-                            android:textSize="10dp"
                             android:textAlignment="center"
-                            android:textStyle="normal"
-                            android:fontFamily="serif">
-
-                        </TextView>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="12dp"
-                    android:layout_marginBottom="12dp"
-                    app:cardElevation="0dp"
-                    app:cardCornerRadius="8dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_margin="5dp"
-                        android:layout_gravity="center"
-                        android:gravity="center">
-
-                        <ImageView
-                            android:layout_width="160dp"
-                            android:layout_height="160dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/kostaja_logo">
-                        </ImageView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Selengkapnya tentang Kost ini"
                             android:textSize="10dp"
-                            android:textAlignment="center"
                             android:textStyle="normal"
-                            android:fontFamily="serif">
-
-                        </TextView>
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="0dp"
-                    android:layout_height="50dp"
-                    android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
-                    android:layout_marginLeft="12dp"
-                    android:layout_marginRight="12dp"
-                    android:layout_marginBottom="12dp"
-                    app:cardElevation="0dp"
-                    app:cardCornerRadius="8dp">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical"
-                        android:layout_margin="5dp"
-                        android:layout_gravity="center"
-                        android:gravity="center">
-
-                        <ImageView
-                            android:layout_width="160dp"
-                            android:layout_height="160dp"
-                            android:layout_gravity="center"
-                            android:src="@drawable/kostaja_logo">
-                        </ImageView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Selengkapnya tentang Kost ini"
-                            android:textSize="10dp"
-                            android:textAlignment="center"
-                            android:textStyle="normal"
-                            android:fontFamily="serif">
+                            tools:ignore="TextSizeCheck">
 
                         </TextView>
 
@@ -343,11 +259,97 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="serif"
                             android:text="Selengkapnya tentang Kost ini"
-                            android:textSize="10dp"
                             android:textAlignment="center"
+                            android:textSize="10dp"
                             android:textStyle="normal"
-                            android:fontFamily="serif">
+                            tools:ignore="TextSizeCheck">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/kostaja_logo">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:text="Selengkapnya tentang Kost ini"
+                            android:textAlignment="center"
+                            android:textSize="10dp"
+                            android:textStyle="normal"
+                            tools:ignore="TextSizeCheck">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginBottom="12dp"
+                    app:cardElevation="0dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="5dp"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/kostaja_logo">
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="serif"
+                            android:text="Selengkapnya tentang Kost ini"
+                            android:textAlignment="center"
+                            android:textSize="10dp"
+                            android:textStyle="normal"
+                            tools:ignore="TextSizeCheck">
 
                         </TextView>
 

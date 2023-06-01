@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -31,22 +32,6 @@
                     android:layout_marginEnd="1dp"
                     android:background="@drawable/panah"></TextView>
 
-                <TextView
-                    android:id="@+id/judul"
-                    android:layout_width="250dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="20dp"
-                    android:fontFamily="serif"
-                    android:gravity="center"
-                    android:text="Kos Taja"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:textStyle="bold">
-
-                </TextView>
-
             </LinearLayout>
 
             <LinearLayout
@@ -55,23 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/header1"
                 android:layout_marginTop="40dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="20dp"
-                    android:fontFamily="serif"
-                    android:gravity="center"
-                    android:text="Silahkan Log In terlebih dulu"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:textStyle="bold">
-
-                </TextView>
-
-            </LinearLayout>
+                android:orientation="horizontal"/>
 
             <LinearLayout
                 android:layout_below="@+id/header2"
@@ -96,8 +65,10 @@
                         <ImageView
                             android:id="@+id/gambar"
                             android:layout_width="160dp"
-                            android:layout_height="80dp"
-                            android:background="@drawable/kostaja_logo"></ImageView>
+                            android:layout_height="60dp"
+                            android:background="@drawable/kostaja_text">
+
+                        </ImageView>
 
                     </LinearLayout>
 
@@ -109,8 +80,6 @@
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="20dp"
                         android:textColor="@color/black"
-                        android:fontFamily="serif"
-                        android:textStyle="bold"
                         android:text="Daftar Sebagai">
 
                     </TextView>
@@ -120,61 +89,36 @@
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginTop="4dp"
+                        android:background="@drawable/background_ed"
                         android:entries="@array/ListUser"
-                        android:textSize="12dp"
                         android:paddingLeft="5dp"
-                        android:background="@drawable/background_ed">
+                        android:textSize="12dp"
+                        tools:ignore="TouchTargetSizeCheck">
+
                     </Spinner>
-
-                    <TextView
-                        android:id="@+id/Email_head"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/gambar"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="20dp"
-                        android:text="Email"
-                        android:fontFamily="serif"
-                        android:textStyle="bold"
-                        android:textColor="@color/black">
-
-                    </TextView>
 
                     <EditText
                         android:id="@+id/Email_user"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_below="@+id/Email_head"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="25dp"
                         android:background="@drawable/background_ed"
                         android:hint="Email"
                         android:paddingLeft="15dp"
                         android:textColorHint="@color/black"
                         android:textSize="12dp"
-                        app:counterTextColor="@color/black">
+                        app:counterTextColor="@color/black"
+                        tools:ignore="TextSizeCheck,TouchTargetSizeCheck">
 
                     </EditText>
-
-                    <TextView
-                        android:id="@+id/Password_head"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@id/Email_user"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="20dp"
-                        android:text="Password"
-                        android:fontFamily="serif"
-                        android:textStyle="bold"
-                        android:textColor="@color/black">
-
-                    </TextView>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/Pass0"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_below="@id/Password_head"
-                        android:layout_marginTop="4dp"
+                        android:layout_marginTop="25dp"
                         app:boxBackgroundMode="none"
                         app:hintEnabled="false"
                         app:passwordToggleEnabled="true">
@@ -192,7 +136,8 @@
                             android:padding="10dp"
                             android:textColorHint="@color/black"
                             android:textSize="12dp"
-                            app:counterTextColor="@color/black">
+                            app:counterTextColor="@color/black"
+                            tools:ignore="TextSizeCheck,TouchTargetSizeCheck">
 
                         </EditText>
 
@@ -207,8 +152,9 @@
                         android:background="@drawable/button_shape"
                         android:hint="Login"
                         android:textColor="@color/black"
-                        android:textColorHint="@color/black"
-                        android:textSize="20dp">
+                        android:textColorHint="@color/white"
+                        android:textSize="20dp"
+                        tools:ignore="TouchTargetSizeCheck">
 
                     </androidx.appcompat.widget.AppCompatButton>
 
@@ -225,8 +171,9 @@
                             android:layout_height="wrap_content"
                             android:text="Belum punya akun Kos Taja?"
                             android:textColor="@color/black"
+                            android:textSize="10dp"
                             android:textStyle="normal"
-                            android:textSize="10dp">
+                            tools:ignore="TextSizeCheck">
 
                         </TextView>
 
@@ -237,8 +184,9 @@
                             android:layout_marginLeft="4dp"
                             android:text="Daftar Sekarang"
                             android:textColor="@color/biru"
+                            android:textSize="10dp"
                             android:textStyle="normal"
-                            android:textSize="10dp">
+                            tools:ignore="TextSizeCheck">
 
                         </TextView>
 
@@ -257,8 +205,9 @@
                             android:layout_height="wrap_content"
                             android:text="Lupa password?"
                             android:textColor="@color/biru"
+                            android:textSize="10dp"
                             android:textStyle="normal"
-                            android:textSize="10dp">
+                            tools:ignore="TextSizeCheck">
 
                         </TextView>
 

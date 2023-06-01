@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -30,23 +31,23 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginEnd="1dp"
-                    android:background="@drawable/panah"></TextView>
+                    android:background="@drawable/panah">
 
+                </TextView>
                 <TextView
-                    android:id="@+id/judul"
-                    android:layout_width="250dp"
+                    android:layout_width="300dp"
                     android:layout_height="40dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginRight="20dp"
-                    android:fontFamily="serif"
+                    android:layout_marginStart="20dp"
                     android:gravity="center"
-                    android:text="Kos Taja"
+                    android:layout_marginTop="5dp"
+                    android:text="Login sebagai Pemilik Kos"
                     android:textColor="@color/black"
                     android:textSize="20dp"
                     android:textStyle="bold">
 
                 </TextView>
+
 
             </LinearLayout>
 
@@ -58,19 +59,6 @@
                 android:layout_marginTop="40dp"
                 android:orientation="horizontal">
 
-                <TextView
-                    android:layout_width="300dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:layout_marginStart="20dp"
-                    android:fontFamily="serif"
-                    android:gravity="center"
-                    android:text="Login sebagai Pemilik Kos"
-                    android:textColor="@color/black"
-                    android:textSize="20dp"
-                    android:textStyle="bold">
-
-                </TextView>
 
             </LinearLayout>
 
@@ -98,8 +86,10 @@
                         <ImageView
                             android:id="@+id/gambar"
                             android:layout_width="160dp"
-                            android:layout_height="80dp"
-                            android:background="@drawable/kostaja_logo"></ImageView>
+                            android:layout_height="60dp"
+                            android:background="@drawable/kostaja_text">
+
+                        </ImageView>
 
                     </LinearLayout>
 
@@ -126,7 +116,8 @@
                         android:paddingLeft="20dp"
                         android:textColorHint="@color/black"
                         android:textSize="12dp"
-                        app:counterTextColor="@color/black">
+                        app:counterTextColor="@color/black"
+                        tools:ignore="TextSizeCheck,TouchTargetSizeCheck">
 
                     </EditText>
 
@@ -165,7 +156,8 @@
                             android:padding="10dp"
                             android:textColorHint="@color/black"
                             android:textSize="12dp"
-                            app:counterTextColor="@color/black"></EditText>
+                            app:counterTextColor="@color/black"
+                            tools:ignore="TextSizeCheck,TouchTargetSizeCheck"></EditText>
 
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -178,8 +170,9 @@
                         android:background="@drawable/button_shape"
                         android:hint="Login"
                         android:textColor="@color/black"
-                        android:textColorHint="@color/black"
-                        android:textSize="20dp">
+                        android:textColorHint="@color/white"
+                        android:textSize="20dp"
+                        tools:ignore="TouchTargetSizeCheck">
 
                     </androidx.appcompat.widget.AppCompatButton>
 
@@ -196,8 +189,9 @@
                             android:layout_height="wrap_content"
                             android:text="Belum punya akun Kos Taja?"
                             android:textColor="@color/black"
+                            android:textSize="10dp"
                             android:textStyle="normal"
-                            android:textSize="10dp">
+                            tools:ignore="TextSizeCheck">
 
                         </TextView>
 
@@ -208,8 +202,9 @@
                             android:layout_marginLeft="4dp"
                             android:text="Daftar Sekarang"
                             android:textColor="@color/biru"
+                            android:textSize="10dp"
                             android:textStyle="normal"
-                            android:textSize="10dp">
+                            tools:ignore="TextSizeCheck">
 
                         </TextView>
 
@@ -228,8 +223,9 @@
                             android:layout_height="wrap_content"
                             android:text="Lupa password?"
                             android:textColor="@color/biru"
+                            android:textSize="10dp"
                             android:textStyle="normal"
-                            android:textSize="10dp">
+                            tools:ignore="TextSizeCheck">
 
                         </TextView>
 
